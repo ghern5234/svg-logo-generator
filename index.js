@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { Circle, Triangle } = require("./lib/shapes");
+const { Circle, Triangle, Square } = require("./lib/shapes");
 
 inquirer
   .prompt([
@@ -50,13 +50,19 @@ inquirer
         answers.characters,
         answers.textColor
       )
+    } else {
+        userShape = new Square(
+            answers.shapeColor,
+            answers.characters,
+            answers.textColor
+        )
     }
 
-    var templateCode = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    var templateCode = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg" >
 
     ${userShape.render()}
   
-    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${
+    <text x="150" y="125" font-size="40" text-anchor="middle" fill="${
       userShape.textColor
     }">${userShape.text}</text>
   
