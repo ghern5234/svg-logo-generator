@@ -68,18 +68,11 @@ inquirer
   
   </svg>`;
 
-    console.log("HIS IS THE TEM[PLATE CODE");
-
-    console.log(templateCode);
-
     fs.writeFile("./logo.svg", templateCode, (err) => {
       if (err) {
         throw err;
       }
       console.log(" you file has been created");
-    });
+    })
   });
 
-// function writeToFile(fileName, data) {
-//   fs.writeFileSync(fileName, data);
-// }
