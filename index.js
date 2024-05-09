@@ -36,7 +36,6 @@ inquirer
   .then((answers) => {
     let userShape;
     if (answers.shape === "circle") {
-      console.log("The user wants cirlce");
       userShape = new Circle(
         answers.shapeColor,
         answers.characters,
@@ -70,6 +69,6 @@ inquirer
       if (err) {
         throw err;
       }
-      console.log(" you file has been created");
+      console.log("Your file has been created");
     });
   });
