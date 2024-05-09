@@ -34,8 +34,6 @@ inquirer
     },
   ])
   .then((answers) => {
-    console.log(answers);
-    //answers.shaoe
     let userShape;
     if (answers.shape === "circle") {
       console.log("The user wants cirlce");
@@ -44,18 +42,18 @@ inquirer
         answers.characters,
         answers.textColor
       );
-    } else if(answers.shape === "triangle") {
+    } else if (answers.shape === "triangle") {
       userShape = new Triangle(
         answers.shapeColor,
         answers.characters,
         answers.textColor
-      )
+      );
     } else {
-        userShape = new Square(
-            answers.shapeColor,
-            answers.characters,
-            answers.textColor
-        )
+      userShape = new Square(
+        answers.shapeColor,
+        answers.characters,
+        answers.textColor
+      );
     }
 
     var templateCode = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg" >
@@ -73,6 +71,5 @@ inquirer
         throw err;
       }
       console.log(" you file has been created");
-    })
+    });
   });
-
