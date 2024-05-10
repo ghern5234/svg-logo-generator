@@ -17,6 +17,7 @@ This is a application designed to generate custom SVG logo's for your projects w
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -48,6 +49,17 @@ This is a application designed to generate custom SVG logo's for your projects w
 - For a visual demonstration, please refer to the [tutorial video](https://drive.google.com/file/d/1AGdHUDYVPDqAP3FgfXz-Oy5QJxbrYdvu/view).
 
 
+
+## Testing
+- Ensure you have Node.js installed and install the dependecies by running `npm install` in the terminal.
+- To run automated tests, you can use the `npm test` command in the terminal.
+- - For a visual demonstration, please refer to the [tutorial video](https://drive.google.com/file/d/1AGdHUDYVPDqAP3FgfXz-Oy5QJxbrYdvu/view).
+
+
+
+
+
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
@@ -70,3 +82,5 @@ Please refer to the [LICENSE](./LICENSE) file for more licensing information.
 
 
 
+![alt text](images/svg-test.png)
+![alt text](images/svg-example-logo.png)
